@@ -44,7 +44,7 @@ for message in st.session_state.messages:
 
 # 사용자 메시지 입력 및 AI 응답 생성
 if prompt := st.chat_input("메시지를 입력하세요."):
-    with st.chat_message("user"):
+    with st.chat_message("user"): 
         st.markdown(prompt)
         st.session_state.messages.append({"role": "user", "content": prompt})
         response = ""
